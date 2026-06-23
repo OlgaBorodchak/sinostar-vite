@@ -1,6 +1,8 @@
 import { gsap } from 'gsap'
 
 export function initBanner() {
+  const animatedText = document.querySelector('.animated-text')
+
   gsap
     .timeline()
     .to('.animated-text', {
@@ -11,6 +13,9 @@ export function initBanner() {
       delay: 3,
       opacity: 0,
       ease: 'expo.in',
+      onComplete: () => {
+        animatedText.style.display = 'none'
+      },
     })
     .to('header', { opacity: 1, duration: 2 }, '>')
     .to(
@@ -25,10 +30,7 @@ export function initBanner() {
       },
       '>'
     )
-    .to('.banner', { paddingBottom: '10%', duration: 2, ease: 'none' }, '<')
-
-  const animatedText = document.querySelector('.animated-text')
-  setTimeout(() => (animatedText.style.display = 'none'), 8000)
+    .to('.banner', { paddingTop: '2em', paddingBottom: '10%', duration: 2, ease: 'none' }, '<')
 }
 
 export function initVideoSource() {

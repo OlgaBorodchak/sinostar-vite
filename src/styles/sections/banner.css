@@ -45,7 +45,8 @@
 }
 
 #uber-uns {
-  background: url(./assets/deco_element_sphere_one.webp) no-repeat left center,
+  background:
+    url(/assets/deco_element_sphere_one.webp) no-repeat left center,
     linear-gradient(
       50deg,
       hsla(136, 8%, 72%, 1) 5.33%,
@@ -83,7 +84,7 @@ h1 {
 }
 
 h1 span {
-  background-image: url(./assets/text_bg.webp);
+  background-image: url(/assets/text_bg.webp);
   background-repeat: repeat;
   -webkit-background-clip: text;
   color: transparent;
@@ -93,7 +94,7 @@ h1 span {
 }
 
 .deco-element-container {
-  background: url(./assets/deco_element.webp) no-repeat;
+  background: url(/assets/deco_element.webp) no-repeat;
   background-size: cover;
   width: clamp(12.188rem, 20vw + 2.188rem, 20.188rem);
   height: clamp(12.5rem, 20.625vw + 2.188rem, 20.75rem);
@@ -127,7 +128,7 @@ h1 span {
   position: absolute;
   top: 0;
   left: 61%;
-  background: url(./assets/deco_element_sphere_two.webp) no-repeat;
+  background: url(/assets/deco_element_sphere_two.webp) no-repeat;
   background-size: contain;
   height: clamp(7.125rem, 10.703vw + 1.867rem, 11.5rem);
   width: clamp(7.125rem, 12.538vw + 0.966rem, 12.25rem);
@@ -137,7 +138,7 @@ h1 span {
   position: absolute;
   right: 0;
   top: 0;
-  background: url(./assets/deco_element_sphere_four.webp) no-repeat;
+  background: url(/assets/deco_element_sphere_four.webp) no-repeat;
   background-size: contain;
   background-position: top right;
   height: clamp(10rem, 25.54vw + 4.014rem, 27rem);
@@ -147,9 +148,8 @@ h1 span {
 .deco-element-sphere-three {
   position: absolute;
   bottom: 0;
-  background: url(./assets/deco_element_sphere_three.webp) no-repeat;
+  background: url(/assets/deco_element_sphere_three.webp) no-repeat;
   background-size: contain;
   height: clamp(10.75rem, 9.39vw + 8.549rem, 17rem);
   width: clamp(11.75rem, 9.39vw + 9.549rem, 18rem);
 }
-
