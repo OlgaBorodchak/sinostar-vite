@@ -8,7 +8,7 @@ header {
   width: 100%;
   backdrop-filter: saturate(180%) blur(20px);
   background-color: hsla(0, 0%, 0%, 0.185);
-  -webkit-backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
   opacity: 0;
   transition: all 0.5s ease;
 }
@@ -54,7 +54,7 @@ header {
 
 .nav-item::after,
 .list-item-hover::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 2px;
   left: 0;
@@ -97,18 +97,6 @@ header {
   pointer-events: none;
 }
 
-/* @supports ((backdrop-filter: blur(20px))) {
-  .bg-filter {
-    backdrop-filter: blur(20px);
-    background: hsl(0 0% 0% / 0.185);
-  }
-
-  header {
-    backdrop-filter: blur(20px);
-    background: hsl(0 0% 0% / 0.185);
-  }
-} */
-
 .nav-bar-mobile {
   display: flex;
   flex-direction: column;
@@ -132,7 +120,8 @@ header {
 }
 
 .nav-list-mobile li:hover {
-  background: url(./assets/hover_deco_element.webp) no-repeat center right -13px,
+  background:
+    url(/assets/hover_deco_element.webp) no-repeat center right -13px,
     linear-gradient(
       90deg,
       rgba(72, 173, 55, 0.8) 6.92%,
@@ -174,7 +163,9 @@ button {
   height: 3px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 4px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .middle-line {
@@ -193,4 +184,3 @@ button {
 .open-btn .bottom-line {
   transform: translateY(-10px) rotate(-45deg);
 }
-
