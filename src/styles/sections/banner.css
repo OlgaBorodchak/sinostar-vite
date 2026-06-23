@@ -1,0 +1,155 @@
+.page {
+  position: relative;
+  overflow: hidden;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 0%);
+  overflow: hidden;
+}
+
+#welcome-video-container {
+  width: 100%;
+  border-radius: 2em;
+}
+
+.welcome-video {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  height: 100%;
+  max-height: 1024px;
+}
+
+.animated-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(3rem, 18.028vw - 1.225rem, 15rem);
+  font-family: inherit;
+  font-weight: 800;
+  color: white;
+  background: hsla(0, 0%, 0%);
+  mix-blend-mode: multiply;
+}
+
+#uber-uns {
+  background: url(./assets/deco_element_sphere_one.webp) no-repeat left center,
+    linear-gradient(
+      50deg,
+      hsla(136, 8%, 72%, 1) 5.33%,
+      hsla(51, 6%, 79%, 1) 94.04%
+    );
+}
+
+#uber-uns .container {
+  width: 100%;
+  max-width: 90em;
+  margin: 0 auto;
+  padding-block: clamp(3.125rem, 6.573vw + 1.585rem, 7.5rem);
+  padding-right: 3.75em;
+}
+
+.container {
+  width: 100%;
+  max-width: 90em;
+  margin: 0 auto;
+  padding-block: clamp(1.875rem, 8.036vw + 0.268rem, 7.5rem);
+  padding-inline: 10em;
+}
+
+.main-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: hsla(0, 0%, 100%, 1);
+  font-weight: 800;
+  font-size: clamp(1.75rem, 6.009vw + 0.342rem, 5.75rem);
+  text-transform: uppercase;
+}
+
+h1 span {
+  background-image: url(./assets/text_bg.webp);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-position: top right;
+  font-weight: 800;
+  font-size: clamp(1.75rem, 6.009vw + 0.342rem, 5.75rem);
+}
+
+.deco-element-container {
+  background: url(./assets/deco_element.webp) no-repeat;
+  background-size: cover;
+  width: clamp(12.188rem, 20vw + 2.188rem, 20.188rem);
+  height: clamp(12.5rem, 20.625vw + 2.188rem, 20.75rem);
+}
+
+.btn-text-wrapper {
+  display: flex;
+  margin-top: 4.75em;
+}
+
+.par {
+  width: 28em;
+  margin-left: clamp(5rem, 39.286vw - 13.857rem, 21.5rem);
+}
+
+.par p {
+  color: hsla(0, 0%, 4%, 1);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: clamp(0.75rem, 0.376vw + 0.662rem, 1rem);
+  line-height: 140%;
+  text-wrap: pretty;
+}
+
+#product-portfolio {
+  position: relative;
+  padding-top: clamp(3rem, 10vw + 1rem, 10rem);
+}
+
+.deco-element-sphere-two {
+  position: absolute;
+  top: 0;
+  left: 61%;
+  background: url(./assets/deco_element_sphere_two.webp) no-repeat;
+  background-size: contain;
+  height: clamp(7.125rem, 10.703vw + 1.867rem, 11.5rem);
+  width: clamp(7.125rem, 12.538vw + 0.966rem, 12.25rem);
+}
+
+.deco-element-sphere-four {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(./assets/deco_element_sphere_four.webp) no-repeat;
+  background-size: contain;
+  background-position: top right;
+  height: clamp(10rem, 25.54vw + 4.014rem, 27rem);
+  width: clamp(12.5rem, 8.92vw + 10.409rem, 18.438rem);
+}
+
+.deco-element-sphere-three {
+  position: absolute;
+  bottom: 0;
+  background: url(./assets/deco_element_sphere_three.webp) no-repeat;
+  background-size: contain;
+  height: clamp(10.75rem, 9.39vw + 8.549rem, 17rem);
+  width: clamp(11.75rem, 9.39vw + 9.549rem, 18rem);
+}
+

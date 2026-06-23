@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 95px);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: "Plus Jakarta Sans";
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+

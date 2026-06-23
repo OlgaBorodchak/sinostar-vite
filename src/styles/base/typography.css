@@ -1,0 +1,24 @@
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: clamp(1.25rem, 1.502vw + 0.898rem, 2.25rem);
+  font-weight: 500;
+  line-height: 140%;
+  color: hsl(105, 6%, 13%);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  color: #525850;
+  font-size: clamp(0.75rem, 0.376vw + 0.662rem, 1rem);
+  font-weight: 500;
+  letter-spacing: 3.2px;
+  text-align: center;
+}
+

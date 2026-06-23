@@ -1,0 +1,196 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2em 10em;
+  display: flex;
+  z-index: 100;
+  width: 100%;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: hsla(0, 0%, 0%, 0.185);
+  -webkit-backdrop-filter: blur(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 90em;
+  margin: 0 auto;
+}
+
+.sinostar-logo {
+  width: min(60vw, 16em);
+}
+
+.sinostar-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.nav-list {
+  margin-left: 7em;
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-left: 4em;
+  display: flex;
+}
+
+.nav-item,
+.nav-item-mobile,
+.list-item-hover {
+  position: relative;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: clamp(0.875rem, 0.188vw + 0.831rem, 1rem);
+}
+
+.nav-item::after,
+.list-item-hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  background: hsl(0, 0%, 100%);
+  transition: width 0.2s;
+}
+
+.nav-item:hover::after,
+.list-item-hover:hover::after {
+  width: 100%;
+}
+
+.nav-mobile-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    to right,
+    hsl(105, 6%, 13%) 0%,
+    hsl(105, 6%, 13%) 70.1%,
+    hsla(0, 0%, 0%, 0.185) 70%,
+    hsla(0, 0%, 0%, 0.185) 100%
+  );
+  display: none;
+}
+
+.bg-filter {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  width: 30%;
+  height: 100vh;
+  background: hsla(0, 0%, 100%, 0.5);
+  backdrop-filter: blur(20px);
+  pointer-events: none;
+}
+
+/* @supports ((backdrop-filter: blur(20px))) {
+  .bg-filter {
+    backdrop-filter: blur(20px);
+    background: hsl(0 0% 0% / 0.185);
+  }
+
+  header {
+    backdrop-filter: blur(20px);
+    background: hsl(0 0% 0% / 0.185);
+  }
+} */
+
+.nav-bar-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.nav-bar-mobile .sinostar-logo {
+  display: flex;
+  margin: 2em;
+}
+
+.nav-list-mobile {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.nav-list-mobile li {
+  list-style: none;
+  padding-block: 0.9em;
+  padding-inline-start: clamp(3.875rem, 18.148vw + 0.245rem, 10rem);
+}
+
+.nav-list-mobile li:hover {
+  background: url(./assets/hover_deco_element.webp) no-repeat center right -13px,
+    linear-gradient(
+      90deg,
+      rgba(72, 173, 55, 0.8) 6.92%,
+      rgba(72, 173, 55, 0) 100%
+    );
+  background-size: contain;
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: 1px solid transparent;
+  padding: 0;
+}
+
+.menu-toggle {
+  width: 3em;
+  height: 2.8em;
+  cursor: pointer;
+  border-radius: 4px;
+  display: none;
+  z-index: 1000;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 7px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 4px;
+}
+
+.bar {
+  width: 80%;
+  height: 3px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.middle-line {
+  transition-delay: 0.3s;
+}
+
+.open-btn .middle-line {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+.open-btn .top-line {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.open-btn .bottom-line {
+  transform: translateY(-10px) rotate(-45deg);
+}
+

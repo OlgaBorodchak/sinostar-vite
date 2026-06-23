@@ -1,0 +1,277 @@
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 90em;
+  margin: 0 auto;
+  padding: 3.75em 2em;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-title {
+  color: hsla(105, 6%, 13%, 1);
+  font-size: clamp(0.875rem, 0.188vw + 0.831rem, 1rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.icon-img {
+  display: block;
+  /* width: 100%; */
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.eco {
+  padding-bottom: 1.5em;
+}
+
+#partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: clamp(3rem, 6.009vw + 1.592rem, 7rem);
+}
+
+.marquee {
+  --gap: 20px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  margin-top: 2.5em;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.marquee-hover-pause:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.partner-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#eco-clothing {
+  position: relative;
+}
+
+.deco-element-sphere-five {
+  background: url(./assets/deco_element_sphere_five.webp) no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 47em;
+  width: 47.625em;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+
+.deco-element-sphere-six {
+  background: url(./assets/deco_element_sphere_six.webp) no-repeat;
+  background-size: cover;
+  width: 35em;
+  height: 34em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.left-side {
+  flex-basis: 34.25em;
+}
+
+.right-side {
+  flex-basis: 34em;
+}
+
+.left-side-title {
+  margin-bottom: 0.3em;
+}
+
+.left-side-title h2 {
+  color: hsla(105, 6%, 13%, 1);
+  font-size: clamp(1.25rem, 3.944vw + 0.326rem, 3.875rem);
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.left-side-subtitle {
+  width: 22em;
+  margin-block: 1.25em 2.5em;
+}
+
+.left-side-subtitle h3 {
+  color: hsl(105, 5%, 33%);
+  font-size: clamp(0.75rem, 0.376vw + 0.662rem, 1rem);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.hoody-img {
+  display: none;
+  width: 100%;
+  max-width: 28em;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hoody-img.is-visible {
+  display: block;
+}
+
+.circular-text {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  width: 8.57em;
+  z-index: 2;
+  height: auto;
+}
+
+.iqoniq-logo {
+  position: absolute;
+  top: 7.2%;
+  left: 8%;
+}
+
+.right-side-img {
+  border-radius: 2em;
+  width: 100%;
+  overflow: hidden;
+}
+
+.right-side-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2em;
+  object-fit: cover;
+}
+
+.right-side-video {
+  width: 100%;
+  max-width: 28em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 2%;
+  left: -5%;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+figure {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.right-side-video:hover {
+  transform: scale(1.2);
+}
+
+.eco-clothing-video {
+  display: block;
+  max-width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.eco-clothing-video-btn {
+  position: absolute;
+  top: 43%;
+  left: 45%;
+  cursor: pointer;
+  background: url(./assets/icon-play.svg) no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.video-pause-btn {
+  background: url(./assets/pause-icon.svg) no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.deco-element-line {
+  width: 15.25em;
+  height: 0.5em;
+  background-color: hsla(57, 17%, 21%, 1);
+  border-radius: 0.3em;
+  margin-top: 1.3em;
+}
+
+#product-gallery {
+  background-color: hsla(0, 0%, 96%, 1);
+  position: relative;
+}
+
+.video-deco-elem-one {
+  background: url(./assets/video_deco_elem_one.webp) no-repeat;
+  background-size: cover;
+  width: 18.4em;
+  height: 32em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.video-deco-elem-two {
+  background: url(./assets/video_deco_elem_two.webp) no-repeat;
+  background-size: cover;
+  width: 10.375em;
+  height: 16.625em;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+

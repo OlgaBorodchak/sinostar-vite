@@ -1,0 +1,29 @@
+/* =====================
+   BASE
+   ===================== */
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/accessibility.css';
+
+/* =====================
+   COMPONENTS
+   ===================== */
+@import './components/navbar.css';
+@import './components/btn.css';
+@import './components/footer.css';
+
+/* =====================
+   SECTIONS
+   ===================== */
+@import './sections/banner.css';
+@import './sections/carousel.css';
+@import './sections/icons-eco.css';
+@import './sections/product-gallery.css';
+@import './sections/videos.css';
+@import './sections/catalogs.css';
+@import './sections/contact.css';
+
+/* =====================
+   MEDIA QUERIES
+   ===================== */
+@import './base/media-queries.css';
