@@ -9,6 +9,9 @@ export default defineConfig({
       input: {
         main: './index.html',
         about: './about.html',
+        privacyPolicy: './privacy-policy.html',
+        termsConditions: './terms-conditions.html',
+        ligalNotice: './ligal-notice.html',
       },
     },
   },
