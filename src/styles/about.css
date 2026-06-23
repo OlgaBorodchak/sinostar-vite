@@ -1,0 +1,20 @@
+/* Shared styles */
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/accessibility.css';
+@import './components/navbar.css';
+@import './components/btn.css';
+@import './components/footer.css';
+@import './sections/banner.css';
+@import './sections/carousel.css';
+@import './sections/icons-eco.css';
+@import './sections/product-gallery.css';
+@import './sections/videos.css';
+@import './sections/catalogs.css';
+@import './sections/contact.css';
+
+/* About-specific */
+@import './sections/about.css';
+
+/* Media queries */
+@import './base/about-media-queries.css';
