@@ -118,38 +118,3 @@ h1 span {
   line-height: 140%;
   text-wrap: pretty;
 }
-
-#product-portfolio {
-  position: relative;
-  padding-top: clamp(3rem, 10vw + 1rem, 10rem);
-}
-
-.deco-element-sphere-two {
-  position: absolute;
-  top: 0;
-  left: 61%;
-  background: url(/assets/deco_element_sphere_two.webp) no-repeat;
-  background-size: contain;
-  height: clamp(7.125rem, 10.703vw + 1.867rem, 11.5rem);
-  width: clamp(7.125rem, 12.538vw + 0.966rem, 12.25rem);
-}
-
-.deco-element-sphere-four {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: url(/assets/deco_element_sphere_four.webp) no-repeat;
-  background-size: contain;
-  background-position: top right;
-  height: clamp(10rem, 25.54vw + 4.014rem, 27rem);
-  width: clamp(12.5rem, 8.92vw + 10.409rem, 18.438rem);
-}
-
-.deco-element-sphere-three {
-  position: absolute;
-  bottom: 0;
-  background: url(/assets/deco_element_sphere_three.webp) no-repeat;
-  background-size: contain;
-  height: clamp(10.75rem, 9.39vw + 8.549rem, 17rem);
-  width: clamp(11.75rem, 9.39vw + 9.549rem, 18rem);
-}

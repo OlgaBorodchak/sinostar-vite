@@ -1,5 +1,10 @@
 import Swiper from 'swiper'
-import { Navigation, Pagination, EffectCoverflow, Keyboard } from 'swiper/modules'
+import {
+  Navigation,
+  Pagination,
+  EffectCoverflow,
+  Keyboard,
+} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
@@ -14,11 +19,12 @@ export function initCarousel() {
     slidesPerView: 'auto',
     spaceBetween: 100,
     initialSlide: 2,
+    slideActiveClass: 'swiper-slide-active',
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
       depth: 100,
-      modifier: 2.5,
+      modifier: 3,
     },
     keyboard: { enabled: true },
     pagination: {
@@ -28,10 +34,6 @@ export function initCarousel() {
     navigation: {
       nextEl: '.swiper-btn-next',
       prevEl: '.swiper-btn-prev',
-    },
-    breakpoints: {
-      320: { spaceBetween: 40 },
-      480: { spaceBetween: 80 },
     },
   })
 }
