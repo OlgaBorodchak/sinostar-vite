@@ -508,16 +508,16 @@
             <div class="form col-2">
               <form action="/form-handler.php" method="post" id="contactForm">
                 <label for="name" class="label">Dein Name / Firma</label>
-                <input class="input custom" type="text" id="name" name="name" placeholder="Geben Sie Ihren Namen ein"  autocomplete="off" required/>
-                <label for="email" class="label">Email</label>
-                <input class="input custom" type="email" id="email" name="email" placeholder="Geben Sie Ihre email-Adresse ein" autocomplete="off" required/>
+                <input class="input custom" type="text" id="name" name="name" placeholder="Geben Sie Ihren Namen ein" autocomplete="off" required/>
+                <label for="email" class="label">E-Mail</label>
+                <input class="input custom" type="email" id="email" name="email" placeholder="Geben Sie Ihre E-Mail-Adresse ein" autocomplete="off" required/>
                 <label for="message" class="label">Nachricht</label>
                 <textarea class="input custom" cols="3" rows="12" name="message" id="message" placeholder="Geben Sie Ihre Nachricht ein" required></textarea>
-                <button class="form-btn" type="submit" aria-label="Absenden">Absenden
-                  <svg width="11" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><path d="m3 2 4 4.235L3 10" stroke="#fff" stroke-width="2"/></g><defs><filter id="a" x=".273" y=".313" width="10.142" height="13.415" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation="1"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0.295791 0 0 0 0 0.401025 0 0 0 0 0.22482 0 0 0 0.22 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1578_5750"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1578_5750" result="shape"/></filter></defs></svg>            
+                <button class="form-btn" type="submit">Absenden
+                  <svg width="11" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><path d="m3 2 4 4.235L3 10" stroke="#fff" stroke-width="2"/></g><defs><filter id="a" x=".273" y=".313" width="10.142" height="13.415" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation="1"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0.295791 0 0 0 0 0.401025 0 0 0 0 0.22482 0 0 0 0.22 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1578_5750"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1578_5750" result="shape"/></filter></defs></svg>
                 </button>
               </form>
-              <div class="contact-section-img"></div>
+              <div class="contact-section-img" aria-hidden="true"></div>
             </div>
           </div>
         </section>
@@ -527,11 +527,11 @@
           <div class="footer-top">
             <div class="footer-left-side">
               <img class="footer-sinostar-logo" src="./assets/sinostar_logo.svg" width="200" height="37" alt="sinostar logo" loading="lazy" decoding="async">
-              <img class="psi-logo" src="./assets/psi-logo.svg" width="97" height="48" alt="PSI Logo">
+              <img class="psi-logo" src="./assets/psi-logo.svg" width="97" height="48" alt="PSI Logo" loading="lazy" decoding="async">
             </div>
             <div class="footer-right-side">
               <div class="page-links-list">
-                <span class="footer-right-side-title">Links</span>
+                <h3 class="footer-right-side-title">Links</h3>
                 <ul>
                   <li><a href="#uber-uns" class="list-item list-item-hover">Über uns</a></li>
                   <li><a href="./about.html" class="list-item list-item-hover">Unsere Geschichte</a></li>
@@ -540,10 +540,10 @@
                 </ul>
               </div>
               <div class="contact-list">
-                <span class="footer-right-side-title">Kontakt</span>
+                <h3 class="footer-right-side-title">Kontakt</h3>
                 <ul>
                   <li class="list-item address-wrapper">Sinostar Daniel Sitte Schulgasse 4 6900 Bregenz Österreich</li>
-                  <li><a class="list-item" href="mailto:daniel@sinostar.at">Email: daniel@sinostar.at</a></li>
+                  <li><a class="list-item" href="mailto:daniel@sinostar.at">E-Mail: daniel@sinostar.at</a></li>
                   <li><a class="list-item" href="tel:+436641165819">Telefon: +43 664 1165819</a></li>
                   <li class="list-item">UID: ATU 35544602</li>
                 </ul>
@@ -559,7 +559,7 @@
                 <a href="ligal-notice.html">Impressum</a>
                 <a href="terms-conditions.html">AGB</a>
               </div>
-              <span class="footer-copyright">www.sinostar.at © 2024. Alle Rechte vorbehalten.</span>
+              <span class="footer-copyright">www.sinostar.at © 2026. Alle Rechte vorbehalten.</span>
             </div>
           </div>
         </div>

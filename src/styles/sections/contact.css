@@ -2,7 +2,7 @@
   padding-top: 4em;
 }
 
-form {
+#contact form {
   display: flex;
   flex-direction: column;
   flex-basis: 40em;
@@ -49,7 +49,7 @@ form {
   border: none;
   border-radius: 0.5em;
   color: hsl(0, 0%, 100%);
-  font-family: "Plus Jakarta Sans";
+  font-family: inherit;
   font-size: clamp(0.875rem, 0.188vw + 0.831rem, 1rem);
   font-weight: 600;
   padding: 0.6875em 2em;
@@ -73,7 +73,7 @@ form {
 }
 
 .contact-section-img {
-  background: url(./assets/contact-section-img.webp) no-repeat;
+  background: url(/assets/contact-section-img.webp) no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%;
