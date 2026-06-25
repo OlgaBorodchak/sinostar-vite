@@ -26,7 +26,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
-  background: url(./assets/icon-play.svg) no-repeat;
+  background: url(/assets/icon-play.svg) no-repeat;
   background-size: cover;
   width: 24px;
   height: 24px;
@@ -68,7 +68,7 @@
   position: absolute;
   top: 10px;
   right: 15px;
-  background: url(./assets/close_button.svg) no-repeat;
+  background: url(/assets/close_button.svg) no-repeat;
   background-size: cover;
   width: 32px;
   height: 32px;

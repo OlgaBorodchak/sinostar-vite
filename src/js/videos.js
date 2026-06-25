@@ -62,11 +62,13 @@ export function initVideoPlayers() {
       video.pause()
       videoPlayers[index].style.display = 'none'
       btn.style.display = 'block'
+      updateAriaLabel()
     })
 
     video.addEventListener('ended', () => {
       videoPlayers[index].style.display = 'none'
       btn.style.display = 'block'
+      updateAriaLabel()
     })
 
     updateAriaLabel()
