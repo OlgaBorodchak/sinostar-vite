@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  base: '/sinostar-vite/',
   root: '.',
   publicDir: 'public',
   build: {
