@@ -37,7 +37,7 @@ function initItemFive() {
   mm.add('(min-width: 1200px)', () => {
     zoomItemFive.to('.item-5-text-container svg', { x: 160, ease: 'none', duration: 0.6 }, '<')
   })
-  mm.add('(max-width: 1199px)', () => {
+  mm.add('(min-width: 861px) and (max-width: 1199px)', () => {
     zoomItemFive.to('.item-5-text-container svg', { x: 140, ease: 'none', duration: 0.6 }, '<')
   })
   mm.add('(max-width: 860px)', () => {
@@ -60,6 +60,12 @@ function initItemThirteen() {
 
   itemThirteen.addEventListener('mouseenter', () => itemAnimation.play())
   itemThirteen.addEventListener('mouseleave', () => itemAnimation.reverse())
+
+  let item13Active = false
+  itemThirteen.addEventListener('click', () => {
+    item13Active ? itemAnimation.reverse() : itemAnimation.play()
+    item13Active = !item13Active
+  })
 }
 
 // Item 15 hover animation
@@ -73,6 +79,12 @@ function initItemFifteen() {
 
   itemFifteen.addEventListener('mouseenter', () => zoomItemFifteen.play())
   itemFifteen.addEventListener('mouseleave', () => zoomItemFifteen.reverse())
+
+  let item15Active = false
+  itemFifteen.addEventListener('click', () => {
+    item15Active ? zoomItemFifteen.reverse() : zoomItemFifteen.play()
+    item15Active = !item15Active
+  })
 }
 
 export function initProductGallery() {

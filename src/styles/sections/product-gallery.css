@@ -23,7 +23,6 @@
   display: block;
   max-width: 100%;
   object-fit: cover;
-  border-radius: clamp(1.125rem, 1.215vw + 0.542rem, 2rem);
 }
 
 .box-one,
