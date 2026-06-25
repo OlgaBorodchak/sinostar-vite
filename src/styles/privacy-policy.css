@@ -142,7 +142,7 @@ header {
 
 .nav-list-mobile li:hover {
   background: 
-    url(./assets/hover_deco_element.webp) no-repeat center right -13px,
+    url(/assets/hover_deco_element.webp) no-repeat center right -13px,
     linear-gradient(90deg, rgba(72, 173, 55, 0.80) 6.92%, rgba(72, 173, 55, 0.00) 100%);
     background-size: contain;
     cursor: pointer;

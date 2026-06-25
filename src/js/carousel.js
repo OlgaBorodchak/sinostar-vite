@@ -11,7 +11,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 export function initCarousel() {
-  new Swiper('.swiper', {
+  new Swiper('.swiper-carousel', {
     modules: [Navigation, Pagination, EffectCoverflow, Keyboard],
     effect: 'coverflow',
     grabCursor: true,

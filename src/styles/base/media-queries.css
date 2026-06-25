@@ -145,7 +145,7 @@
   }
 
   #uber-uns {
-    background: url(./assets/deco_element_sphere_one_tablet.webp) no-repeat left
+    background: url(/assets/deco_element_sphere_one_tablet.webp) no-repeat left
         center,
       linear-gradient(
         50deg,
@@ -391,7 +391,7 @@
   }
 
   #uber-uns {
-    background: url(./assets/uber-uns-mobile-bg.webp) no-repeat center center,
+    background: url(/assets/uber-uns-mobile-bg.webp) no-repeat center center,
       linear-gradient(
         50deg,
         hsla(136, 8%, 72%, 1) 5.33%,
@@ -526,7 +526,7 @@
   }
 
   .eco-clothing-deco-elem-three-mobile {
-    background: url(./assets/eco_clothing_deco_element_three_mobile.webp)
+    background: url(/assets/eco_clothing_deco_element_three_mobile.webp)
       no-repeat;
     background-size: contain;
     background-position: right;
@@ -539,7 +539,7 @@
   }
 
   .eco-clothing-deco-elem-two-mobile {
-    background: url(./assets/eco_clothing_deco_element_two_mobile.webp)
+    background: url(/assets/eco_clothing_deco_element_two_mobile.webp)
       no-repeat;
     background-size: contain;
     width: 43px;
@@ -551,7 +551,7 @@
   }
 
   .eco-clothing-deco-elem-one-mobile {
-    background: url(./assets/eco_clothing_deco_element_one_mobile.png) no-repeat;
+    background: url(/assets/eco_clothing_deco_element_one_mobile.png) no-repeat;
     background-size: cover;
     width: 131px;
     height: 268px;
@@ -666,7 +666,7 @@
     position: absolute;
     bottom: 1000px;
     left: 0;
-    background: url(./assets/catalog-deco-element-one.webp) no-repeat;
+    background: url(/assets/catalog-deco-element-one.webp) no-repeat;
     background-size: cover;
     width: 12.2em;
     height: 28.2em;
@@ -676,7 +676,7 @@
     position: absolute;
     bottom: 1650px;
     right: 0;
-    background: url(./assets/catalog-deco-element-two.webp) no-repeat;
+    background: url(/assets/catalog-deco-element-two.webp) no-repeat;
     background-size: cover;
     width: 5.1em;
     height: 16.2em;

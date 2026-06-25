@@ -26,7 +26,7 @@ a {
 .deco-element-one {
   position: absolute;
   top: 0;
-  background: url(./assets/about_section_deco_element_one.webp) no-repeat;
+  background: url(/assets/about_section_deco_element_one.webp) no-repeat;
   background-size: contain;
   width: 14.5em;
   height: 21em;
@@ -36,7 +36,7 @@ a {
   position: absolute;
   top: 78%;
   left: 11%;
-  background: url(./assets/about_section_deco_element_two.webp) no-repeat;
+  background: url(/assets/about_section_deco_element_two.webp) no-repeat;
   background-size: contain;
   width: 6em;
   height: 6em;
@@ -46,7 +46,7 @@ a {
   position: absolute;
   top: 0;
   left: 70%;
-  background: url(./assets/about_section_deco_element_three.webp) no-repeat;
+  background: url(/assets/about_section_deco_element_three.webp) no-repeat;
   background-size: contain;
   width: 13em;
   height: 14em;
@@ -56,7 +56,7 @@ a {
   position: absolute;
   top: 17%;
   right: 0;
-  background: url(./assets/about_section_deco_element_four.webp) no-repeat right;
+  background: url(/assets/about_section_deco_element_four.webp) no-repeat right;
   background-size: contain;
   width: 26em;
   height: 30em;
@@ -66,7 +66,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 70%;
-  background: url(./assets/about_section_deco_element_five.webp) no-repeat
+  background: url(/assets/about_section_deco_element_five.webp) no-repeat
     bottom;
   background-size: contain;
   width: 15em;
@@ -196,7 +196,7 @@ header {
 
 .nav-list-mobile li:hover {
   background:
-    url(./assets/hover_deco_element.webp) no-repeat center right -13px,
+    url(/assets/hover_deco_element.webp) no-repeat center right -13px,
     linear-gradient(
       90deg,
       rgba(72, 173, 55, 0.8) 6.92%,
@@ -311,14 +311,14 @@ p {
 
 @media all and (max-width: 860px) {
   .deco-element-one {
-    background: url(./assets/about_section_deco_element_one_mobile.webp)
+    background: url(/assets/about_section_deco_element_one_mobile.webp)
       no-repeat;
     width: 9em;
     height: 10.5em;
   }
 
   .deco-element-four {
-    background: url(./assets/about_section_deco_element_four-mobile.webp)
+    background: url(/assets/about_section_deco_element_four-mobile.webp)
       no-repeat;
     width: 8em;
     hyphens: 24em;
@@ -348,7 +348,7 @@ p {
   }
 
   .deco-element-five {
-    background: url(./assets/about_section_deco_element_five_mobile.webp)
+    background: url(/assets/about_section_deco_element_five_mobile.webp)
       no-repeat;
     width: 11em;
     height: 6em;
