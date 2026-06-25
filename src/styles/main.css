@@ -1,20 +1,8 @@
-/* =====================
-   BASE
-   ===================== */
 @import './base/reset.css';
-@import './base/typography.css';
-@import './base/accessibility.css';
+@import './base/base.css';
 
-/* =====================
-   COMPONENTS
-   ===================== */
-@import './components/navbar.css';
-@import './components/btn.css';
-@import './components/footer.css';
-
-/* =====================
-   SECTIONS
-   ===================== */
+@import './sections/navbar.css';
+@import './sections/btn.css';
 @import './sections/banner.css';
 @import './sections/carousel.css';
 @import './sections/icons-partners-eco.css';
@@ -22,8 +10,6 @@
 @import './sections/videos.css';
 @import './sections/catalogs.css';
 @import './sections/contact.css';
+@import './sections/footer.css';
 
-/* =====================
-   MEDIA QUERIES
-   ===================== */
 @import './base/media-queries.css';

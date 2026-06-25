@@ -22,3 +22,27 @@
   text-align: center;
 }
 
+.accessible_elem {
+  clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+#skip a {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
+
+#skip a:focus {
+  left: 0;
+  top: 0;
+  padding: 3px;
+  background: #ffc;
+  border: 1px solid #990000;
+}
+
