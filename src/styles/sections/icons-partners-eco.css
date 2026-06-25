@@ -25,11 +25,8 @@
 
 .icon-img {
   display: block;
-  /* width: 100%; */
   max-width: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: center;
 }
 
 .eco {
@@ -85,7 +82,7 @@
 }
 
 .deco-element-sphere-five {
-  background: url(./assets/deco_element_sphere_five.webp) no-repeat;
+  background: url(/assets/deco_element_sphere_five.webp) no-repeat;
   background-size: contain;
   background-position: right;
   height: 47em;
@@ -96,7 +93,7 @@
 }
 
 .deco-element-sphere-six {
-  background: url(./assets/deco_element_sphere_six.webp) no-repeat;
+  background: url(/assets/deco_element_sphere_six.webp) no-repeat;
   background-size: cover;
   width: 35em;
   height: 34em;
@@ -188,7 +185,6 @@
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 2em;
   object-fit: cover;
 }
 
@@ -228,15 +224,14 @@ figure {
   top: 43%;
   left: 45%;
   cursor: pointer;
-  background: url(./assets/icon-play.svg) no-repeat;
+  background: url(/assets/icon-play.svg) no-repeat;
   background-size: cover;
   width: 24px;
   height: 24px;
-  pointer-events: none;
 }
 
 .video-pause-btn {
-  background: url(./assets/pause-icon.svg) no-repeat;
+  background: url(/assets/pause-icon.svg) no-repeat;
   background-size: cover;
   width: 24px;
   height: 24px;
@@ -256,7 +251,7 @@ figure {
 }
 
 .video-deco-elem-one {
-  background: url(./assets/video_deco_elem_one.webp) no-repeat;
+  background: url(/assets/video_deco_elem_one.webp) no-repeat;
   background-size: cover;
   width: 18.4em;
   height: 32em;
@@ -266,7 +261,7 @@ figure {
 }
 
 .video-deco-elem-two {
-  background: url(./assets/video_deco_elem_two.webp) no-repeat;
+  background: url(/assets/video_deco_elem_two.webp) no-repeat;
   background-size: cover;
   width: 10.375em;
   height: 16.625em;

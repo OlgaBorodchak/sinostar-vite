@@ -8,9 +8,22 @@ export function initEcoVideo() {
     video.play()
     videoPlayBtn.style.display = 'none'
   })
+
   video.addEventListener('mouseleave', () => {
     video.pause()
     videoPlayBtn.style.display = 'block'
+  })
+
+  videoPlayBtn.addEventListener('click', () => {
+    video.play()
+    videoPlayBtn.style.display = 'none'
+  })
+
+  video.addEventListener('click', () => {
+    if (!video.paused) {
+      video.pause()
+      videoPlayBtn.style.display = 'block'
+    }
   })
 }
 
