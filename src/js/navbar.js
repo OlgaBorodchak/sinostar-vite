@@ -27,7 +27,7 @@ export function initNavbar() {
     const isMenuOpen = menuToggle.classList.contains('open-btn')
     menuToggle.setAttribute('aria-label', isMenuOpen ? 'Schließen' : 'Menü')
     menuToggle.setAttribute('aria-expanded', isMenuOpen)
-    mobileMenu.setAttribute('aria-hidden', !isMenuOpen)
+    isMenuOpen ? mobileMenu.removeAttribute('inert') : mobileMenu.setAttribute('inert', '')
   }
 
   function openMenu() {
